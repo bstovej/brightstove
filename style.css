@@ -2,11 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: lightgray;
 }
 
 header {
-  background-color: #00008B;
+  background-color: darkblue;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -32,6 +32,6 @@ main {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #00008B;
+  background-color: lightblue;
   color: #fff;
 }
