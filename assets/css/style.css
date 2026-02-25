@@ -202,72 +202,93 @@ body {
 }
 
 /* Calendar Styling */
-.calendar-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 30px 0 50px 0;
-    padding: 20px;
-    background-color: #fcfcfc;
+.sidebar-calendar-container {
+    background-color: #fff;
     border: 1px solid #eee;
-    border-radius: 8px;
-}
-
-.calendar-month {
-    flex: 0 0 45%;
-    min-width: 280px;
+    padding: 15px;
+    border-radius: 4px;
     margin-bottom: 20px;
 }
 
-.calendar-month-title {
-    text-align: center;
+.calendar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     margin-bottom: 15px;
-    font-family: 'Merriweather', serif;
-    color: #333;
 }
 
-.calendar-table {
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav-btn {
+    cursor: pointer;
+    padding: 2px 8px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    user-select: none;
+    font-size: 1.1rem;
+    color: #0073aa;
+}
+
+.nav-btn:hover:not(.disabled) {
+    background-color: #eee;
+}
+
+.nav-btn.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.nav-label {
+    font-family: 'Merriweather', serif;
+    font-size: 0.95rem;
+}
+
+.sidebar-calendar-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
-.calendar-table th {
+.sidebar-calendar-table th {
     text-align: center;
-    padding: 8px 0;
+    padding: 5px 0;
     color: #888;
-    font-weight: 600;
     border-bottom: 1px solid #eee;
 }
 
-.calendar-table td {
+.sidebar-calendar-table td {
     text-align: center;
-    padding: 8px 0;
+    padding: 6px 0;
     width: 14.28%;
 }
 
-.calendar-day {
-    color: #999;
+.sidebar-calendar-table .day {
+    color: #666;
 }
 
-.calendar-day.has-post {
+.sidebar-calendar-table .day.has-post {
     font-weight: bold;
 }
 
-.calendar-day.has-post a {
+.sidebar-calendar-table .day.has-post a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
     background-color: #0073aa;
-    color: #fff;
+    color: #fff !important;
     border-radius: 50%;
     text-decoration: none;
-    transition: background-color 0.2s;
 }
 
-.calendar-day.has-post a:hover {
+.sidebar-calendar-table .day.has-post a:hover {
     background-color: #005a87;
+    text-decoration: none !important;
 }
 
 /* Excerpt Styling */

@@ -29,6 +29,103 @@
             
             <aside class="sidebar">
                 <div class="widget">
+                    <h3 class="widget-title">Calendar</h3>
+                    <div id="sidebar-calendar" class="sidebar-calendar-container"></div>
+                    
+                    <script>
+                        const postData = {
+                            {% for post in site.posts %}
+                            "{{ post.date | date: '%Y-%m-%d' }}": {
+                                "url": "{{ post.url | relative_url }}",
+                                "title": "{{ post.title | escape }}"
+                            }{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        };
+
+                        let currentViewDate = new Date();
+                        const today = new Date();
+
+                        function renderSidebarCalendar(date) {
+                            const year = date.getFullYear();
+                            const month = date.getMonth();
+                            const container = document.getElementById('sidebar-calendar');
+                            
+                            const monthName = date.toLocaleString('default', { month: 'long' });
+                            const firstDay = new Date(year, month, 1).getDay();
+                            const daysInMonth = new Date(year, month + 1, 0).getDate();
+                            
+                            const isCurrentYear = year === today.getFullYear();
+                            const isCurrentMonth = isCurrentYear && month === today.getMonth();
+
+                            let html = `
+                                <div class="calendar-nav">
+                                    <div class="nav-row year-nav">
+                                        <span class="nav-btn" onclick="changeYear(-1)">«</span>
+                                        <span class="nav-label">${year}</span>
+                                        <span class="nav-btn ${isCurrentYear ? 'disabled' : ''}" onclick="${isCurrentYear ? '' : 'changeYear(1)'}">»</span>
+                                    </div>
+                                    <div class="nav-row month-nav">
+                                        <span class="nav-btn" onclick="changeMonth(-1)">‹</span>
+                                        <span class="nav-label">${monthName}</span>
+                                        <span class="nav-btn ${isCurrentMonth ? 'disabled' : ''}" onclick="${isCurrentMonth ? '' : 'changeMonth(1)'}">›</span>
+                                    </div>
+                                </div>
+                                <table class="sidebar-calendar-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>`;
+
+                            let day = 1;
+                            for (let i = 0; i < 6; i++) {
+                                html += '<tr>';
+                                for (let j = 0; j < 7; j++) {
+                                    if (i === 0 && j < firstDay) {
+                                        html += '<td></td>';
+                                    } else if (day > daysInMonth) {
+                                        html += '<td></td>';
+                                    } else {
+                                        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                                        if (postData[dateStr]) {
+                                            html += `<td class="day has-post"><a href="${postData[dateStr].url}" title="${postData[dateStr].title}">${day}</a></td>`;
+                                        } else {
+                                            html += `<td class="day">${day}</td>`;
+                                        }
+                                        day++;
+                                    }
+                                }
+                                html += '</tr>';
+                                if (day > daysInMonth) break;
+                            }
+                            html += '</tbody></table>';
+                            container.innerHTML = html;
+                        }
+
+                        window.changeYear = function(delta) {
+                            let newYear = currentViewDate.getFullYear() + delta;
+                            if (newYear > today.getFullYear()) return;
+                            currentViewDate.setFullYear(newYear);
+                            // Ensure we don't go into the future if current month is > today's month
+                            if (newYear === today.getFullYear() && currentViewDate.getMonth() > today.getMonth()) {
+                                currentViewDate.setMonth(today.getMonth());
+                            }
+                            renderSidebarCalendar(currentViewDate);
+                        };
+
+                        window.changeMonth = function(delta) {
+                            let targetDate = new Date(currentViewDate.getFullYear(), currentViewDate.getMonth() + delta, 1);
+                            if (targetDate > today) return;
+                            currentViewDate = targetDate;
+                            renderSidebarCalendar(currentViewDate);
+                        };
+
+                        renderSidebarCalendar(currentViewDate);
+                    </script>
+                </div>
+
+                <div class="widget">
                     <p><b><a href="{{ '/about' | relative_url }}">About Bright Stove</a></b></p>
                 </div>
 
