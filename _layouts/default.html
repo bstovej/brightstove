@@ -14,6 +14,7 @@
             <p class="site-description">{{ site.description }}</p>
             <nav class="site-nav">
                 <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/about' | relative_url }}">About</a>
                 <a href="{{ '/categories' | relative_url }}">Categories</a>
                 <a href="{{ '/archives' | relative_url }}">Archives</a>
             </nav>
@@ -27,6 +28,11 @@
             </div>
             
             <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title"><a href="{{ '/about' | relative_url }}">About</a></h3>
+                    <p>An information security practitioner's observations and reflections, mostly made while on the road, reports from various security meetings, and sometimes simply rants on things around.</p>
+                </div>
+
                 <div class="widget">
                     <h3 class="widget-title">Published Books</h3>
                     <div class="book-widget">
