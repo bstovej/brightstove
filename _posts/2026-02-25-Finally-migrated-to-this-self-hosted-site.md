@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Post Title
+title: Post Titl# Finally migrated to this self-hosted sitee
 date: 2026-02-25 15:50:01
 categories:
   - AI Coding
 tags:
   - cybersecurity
-created: 2026-02-25 15:50
-modified: 2026-02-25 15:50
+created: 2026-02-25
+modified: <% tp.file.last_modified_date() %>
 classification: public
 summary: ""
 status: active
