@@ -213,14 +213,15 @@ body {
 .calendar-nav {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     margin-bottom: 15px;
 }
 
 .nav-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
     font-weight: 600;
 }
 
@@ -232,6 +233,8 @@ body {
     user-select: none;
     font-size: 1.1rem;
     color: #0073aa;
+    width: 30px;
+    text-align: center;
 }
 
 .nav-btn:hover:not(.disabled) {
@@ -246,6 +249,15 @@ body {
 .nav-label {
     font-family: 'Merriweather', serif;
     font-size: 0.95rem;
+    color: #333;
+    text-decoration: none;
+    min-width: 80px;
+    text-align: center;
+}
+
+.nav-label:hover {
+    color: #0073aa;
+    text-decoration: underline;
 }
 
 .sidebar-calendar-table {

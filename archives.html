@@ -5,29 +5,99 @@ permalink: /archives/
 ---
 
 <div class="archives-page">
-  <h1>Blog Archives</h1>
+  <h1 id="archives-title">Blog Archives</h1>
+  <div id="filter-info" style="display: none; margin-bottom: 20px; font-weight: bold; color: #0073aa; border-bottom: 1px solid #eee; padding-bottom: 10px;"></div>
 
   <div class="archives-list-container">
     {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
     
     {% for year in postsByYear %}
-      <h2 id="{{ year.name }}">{{ year.name }}</h2>
-      
-      {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
-      {% for month in postsByMonth %}
-        <h3 id="{{ month.name }}-{{ year.name }}">{{ month.name }}</h3>
-        <ul class="post-list">
-          {% for post in month.items %}
-            <li class="post-list-item">
-              <span class="post-meta">{{ post.date | date: "%b %-d" }}</span>
-              <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-              <div class="post-excerpt">
-                {{ post.excerpt | strip_html | truncatewords: 30 }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
+      <div class="year-group" data-year="{{ year.name }}">
+        <h2 id="{{ year.name }}">{{ year.name }}</h2>
+        
+        {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+        {% for month in postsByMonth %}
+          <div class="month-group" data-month="{{ month.name }}-{{ year.name }}">
+            <h3 id="{{ month.name }}-{{ year.name }}">{{ month.name }}</h3>
+            <ul class="post-list">
+              {% for post in month.items %}
+                <li class="post-list-item">
+                  <span class="post-meta">{{ post.date | date: "%b %-d" }}</span>
+                  <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                  <div class="post-excerpt">
+                    {{ post.excerpt | strip_html | truncatewords: 30 }}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
     {% endfor %}
   </div>
 </div>
+
+<script>
+function applyFilter() {
+  const hash = decodeURIComponent(window.location.hash.substring(1));
+  const titleEl = document.getElementById('archives-title');
+  const filterInfoEl = document.getElementById('filter-info');
+  const yearGroups = document.querySelectorAll('.year-group');
+  const monthGroups = document.querySelectorAll('.month-group');
+  
+  // Reset visibility
+  yearGroups.forEach(g => g.style.display = 'block');
+  monthGroups.forEach(g => g.style.display = 'block');
+  filterInfoEl.style.display = 'none';
+  titleEl.innerText = 'Blog Archives';
+
+  if (!hash) return;
+
+  let totalPosts = 0;
+  let filterHeader = '';
+
+  if (hash.match(/^[0-9]{4}$/)) {
+    // Year filter (e.g. #2025)
+    filterHeader = `Archives for ${hash}`;
+    yearGroups.forEach(g => {
+      if (g.getAttribute('data-year') === hash) {
+        g.style.display = 'block';
+        totalPosts = g.querySelectorAll('.post-list-item').length;
+      } else {
+        g.style.display = 'none';
+      }
+    });
+  } else if (hash.includes('-')) {
+    // Month filter (e.g. #January-2025)
+    const [month, year] = hash.split('-');
+    filterHeader = `Archives for ${month} ${year}`;
+    yearGroups.forEach(g => {
+      if (g.getAttribute('data-year') === year) {
+        g.style.display = 'block';
+        const months = g.querySelectorAll('.month-group');
+        months.forEach(m => {
+          if (m.getAttribute('data-month') === hash) {
+            m.style.display = 'block';
+            totalPosts = m.querySelectorAll('.post-list-item').length;
+          } else {
+            m.style.display = 'none';
+          }
+        });
+      } else {
+        g.style.display = 'none';
+      }
+    });
+  }
+
+  if (totalPosts > 0) {
+    titleEl.innerText = filterHeader;
+    filterInfoEl.innerText = `Total Posts: ${totalPosts}`;
+    filterInfoEl.style.display = 'block';
+    // Scroll to top of content area
+    window.scrollTo({ top: titleEl.offsetTop - 20, behavior: 'smooth' });
+  }
+}
+
+window.addEventListener('hashchange', applyFilter);
+window.addEventListener('DOMContentLoaded', applyFilter);
+</script>

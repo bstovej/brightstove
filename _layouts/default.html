@@ -29,7 +29,10 @@
             
             <aside class="sidebar">
                 <div class="widget">
-                    <h3 class="widget-title">Calendar</h3>
+                    <p><b><a href="{{ '/about' | relative_url }}">About Bright Stove</a></b></p>
+                </div>
+
+                <div class="widget">
                     <div id="sidebar-calendar" class="sidebar-calendar-container"></div>
                     
                     <script>
@@ -42,6 +45,7 @@
                             {% endfor %}
                         };
 
+                        const archivesUrl = "{{ '/archives/' | relative_url }}";
                         let currentViewDate = new Date();
                         const today = new Date();
 
@@ -61,12 +65,12 @@
                                 <div class="calendar-nav">
                                     <div class="nav-row year-nav">
                                         <span class="nav-btn" onclick="changeYear(-1)">«</span>
-                                        <span class="nav-label">${year}</span>
+                                        <a href="${archivesUrl}#${year}" class="nav-label">${year}</a>
                                         <span class="nav-btn ${isCurrentYear ? 'disabled' : ''}" onclick="${isCurrentYear ? '' : 'changeYear(1)'}">»</span>
                                     </div>
                                     <div class="nav-row month-nav">
                                         <span class="nav-btn" onclick="changeMonth(-1)">‹</span>
-                                        <span class="nav-label">${monthName}</span>
+                                        <a href="${archivesUrl}#${monthName}-${year}" class="nav-label">${monthName}</a>
                                         <span class="nav-btn ${isCurrentMonth ? 'disabled' : ''}" onclick="${isCurrentMonth ? '' : 'changeMonth(1)'}">›</span>
                                     </div>
                                 </div>
@@ -107,7 +111,6 @@
                             let newYear = currentViewDate.getFullYear() + delta;
                             if (newYear > today.getFullYear()) return;
                             currentViewDate.setFullYear(newYear);
-                            // Ensure we don't go into the future if current month is > today's month
                             if (newYear === today.getFullYear() && currentViewDate.getMonth() > today.getMonth()) {
                                 currentViewDate.setMonth(today.getMonth());
                             }
@@ -123,10 +126,6 @@
 
                         renderSidebarCalendar(currentViewDate);
                     </script>
-                </div>
-
-                <div class="widget">
-                    <p><b><a href="{{ '/about' | relative_url }}">About Bright Stove</a></b></p>
                 </div>
 
                 <div class="widget">
