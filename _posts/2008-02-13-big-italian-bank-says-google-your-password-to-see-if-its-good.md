@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Big Italian bank says 'Google your password to see if it's good'"
+title: "Big Italian bank says Google your password to see if it's good"
 date: 2008-02-13 16:05:10
 categories: [Risk Management]
 id: "msgcns!9091E2A0F1B7D523!662"

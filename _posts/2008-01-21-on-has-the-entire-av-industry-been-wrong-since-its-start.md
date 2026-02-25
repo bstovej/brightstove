@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On 'Has the entire AV industry been wrong since its start?'"
+title: "On whether the entire AV industry been wrong since its start"
 date: 2008-01-21 16:41:30
 categories: [Risk Management]
 id: "msgcns!9091E2A0F1B7D523!635"
