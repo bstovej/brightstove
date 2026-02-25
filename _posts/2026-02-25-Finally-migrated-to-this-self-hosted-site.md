@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Finally migrated to this self-hosted site"
-date: 2026-02-25 15:50:01 +0800
+date: 2026-02-25 09:00:00 +0800
 categories: ["AI Coding"]
 tags: [ai/coding, blog_post]
 created: 2026-02-25
