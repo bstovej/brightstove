@@ -5,7 +5,9 @@ date: 2025-03-11 09:14:30
 categories: [AI Security, Cybersecurity, Governance, Responsiveness, Risk Management]
 tags: [AI, awareness, cybersecurity, governance, responsiveness, risk management]
 ---
-*“Most of the time, we hear about security only when it fails.”* \- Bruce Schneier, Beyond Fear, 2003
+This post was originally published on Substack <a href="https://substack.com/home/post/p-158823563" target="_blank" rel="noreferrer noopener">here</a>.
+<hr>
+*“Most of the time, we hear about security only when it fails.”* \- Bruce Schneier, Beyond Fear, 2003</p>
 
 On January 20, 2025, as we usher in the lunar new Year of the Snake, DeepSeek, a Chinese AI startup, released a new open-source large language model (LLM), DeepSeek:R1, a fine-tuned version of their previous models incorporating advanced reasoning capabilities[\[1\]](https://www.zotero.org/google-docs/?VPqErh). Available through multiple platforms, including apps, web interfaces, cloud APIs, and local installations, the R1 model demonstrated advanced capabilities in reasoning and “time test scaling” while operating at significantly lower costs and with higher energy efficiency compared to similar models like OpenAI’s o1. Notably, DeepSeek-R1 was developed at a fraction of the cost incurred by OpenAI for its GPT4-o1—approximately $5.58 million—highlighting its cost efficiency. This was achieved through techniques such as a mixture of experts, multi-head latent attention, and reinforcement learning, partly driven by the need to optimize models to run on less powerful GPUs due to U.S. export restrictions. The model’s architecture comprises 671 billion parameters, which is ten times more than many other popular open-source large language models. Each layer of DeepSeek-R1 contains 256 experts, with each token routed to eight separate experts in parallel for evaluation[\[2\]](https://www.zotero.org/google-docs/?pbQc3L).
 
@@ -44,7 +46,7 @@ These problems reinforce the need for AI developers, as well as other software d
 Despite these exposures, numerous companies have reported integrating DeepSeek to strengthen digital security and promote innovation in data-driven business operations. Ironically, several companies have expressed that DeepSeek’s cost-effectiveness and powerful reasoning abilities offer new hope for improving AI capabilities in cybersecurity. Companies are incorporating DeepSeek into their platforms to enhance security operations, threat detection, and data protection. The integration of DeepSeek also extends to various sectors including office and education, government, and healthcare, with the model being adopted by entities to improve services and efficiency[\[33\], \[34\]](https://www.zotero.org/google-docs/?wsEaLv). Cautious observers however pointed out that “AI capabilities may be overestimated, large models like DeepSeek have limitations, enterprise applications face challenges in costs, data security, and technology adaptation, and future development still needs observation”[\[35\]](https://www.zotero.org/google-docs/?aLT2oE). In any case, we can only hope that companies deploy adequate security controls and safeguards against the known exposures and vulnerabilities beneath the intelligence that DeepSeek offers.
 
 From its founding in 2023 with the ambition of exploring Artificial General Intelligence (AGI) to its crowning as a significant disruptor in the AI landscape, and the unveiling of its model's security, privacy, and safety exposures, DeepSeek's journey underscores both the promise and the perils of accelerated AI development. DeepSeek's ascent and the subsequent revelations of its weaknesses serve as a cautionary tale for the AI industry. While its technical innovations and cost-effective approaches have disrupted the field, they also highlight the need for greater attention to security, ethics, and transparency in AI development. The AI industry needs to embrace these changes to build more resilient, trustworthy, and ethical systems that benefit society as a whole.
-
+<hr>
 **References**
 
 [\[1\]	DeepSeek-AI *et al.*, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning,” Jan. 22, 2025, *arXiv*: arXiv:2501.12948. doi: 10.48550/arXiv.2501.12948.](https://www.zotero.org/google-docs/?pJAjzZ)  
@@ -83,5 +85,4 @@ From its founding in 2023 with the ambition of exploring Artificial General Inte
 [\[34\]	CyberSecurityMew, “IDC Insight: DeepSeek May Become the Preferred Base LLM Model for the Future Cybersecurity Industry,” CyberSecurityMew. Accessed: Mar. 09, 2025\. \[Online\]. Available: https://cybersecuritymew.substack.com/p/idc-insight-deepseek-may-become-the](https://www.zotero.org/google-docs/?pJAjzZ)  
 [\[35\]	赵立京, “DeepSeek狂潮背后的隐忧：CIO与IT高管的冷思考 —— CIO对DeepSeek的讨论集锦（2）,” CIO信息主管D1net. Accessed: Mar. 09, 2025\. \[Online\]. Available: https://mp.weixin.qq.com/s/vRaOM-lfo5-g4O328bA-Hg](https://www.zotero.org/google-docs/?pJAjzZ)
 
----
-Notes: This post was originally published on Substack <a href="https://substack.com/home/post/p-158823563" target="_blank" rel="noreferrer noopener">here</a>.
+<hr>

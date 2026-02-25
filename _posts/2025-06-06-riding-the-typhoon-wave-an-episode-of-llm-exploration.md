@@ -11,10 +11,8 @@ tags: [AI risk, cybersecurity]
 <p>3. Start a new chat window when moving to a new context to avoid confusing the LLM.</p>
 <p>4. For better results, use specialized/fine-tuned LLM for tasks that are in a specialized domain.&nbsp;</p>
 <p>5. If you have RAG setup, use it to analyze instead of just using the web search feature, which should produce better results.</p>
-<p>Check it out at: </p>
-<p></p>
-The original post was published at <a href="https://substack.com/profile/324848066-meng-chow-kang/note/c-123368408?utm_source=substack&amp;utm_content=first-note-modal" target="_blank" rel="noreferrer noopener"></a>. Here's the full article:
----
+<p>The original post was published at <a href="https://substack.com/profile/324848066-meng-chow-kang/note/c-123368408?utm_source=substack&amp;utm_content=first-note-modal" target="_blank" rel="noreferrer noopener"></a>. Here's the full article:</p>
+<hr>
 The Typhoon threat groups, which consists of several names such as Salt, Volt, and Flax Typhoon, have made wave recently in the critical infrastructure industry although there have been reports about their activities as early as in 2021 @hongsiangSingtelDetectedEradicated2024; @htelAPT41WickedPanda2025; @kimuraVoltTyphoonBRONZE2025; @yellandVoltTyphoonSalt2025;. Using [SecAI’s AI-powered threat intelligence enabled chatbot](https://i.secai.ai/), with a simple prompt, we can quickly get a comprehensive report of what the threat groups are and the commonly known techniques, tactics, and procedures (TTP) attributed to them. For example, with the prompt, "*what can you tell me about the Typhoon threat group?*" SecAI provides a curated report of everything it knows from the Internet and its cyber threat intelligence (CTI) database. A snippet of the report reads as follows:
 
 > *The Typhoon threat groups consist of multiple Advanced Persistent Threat (APT) entities generally attributed to China and linked to state-sponsored cyber espionage efforts. These groups have shown high levels of sophistication in targeting critical infrastructure, government agencies, and corporate sectors worldwide. Below is a comprehensive breakdown of the Typhoon threat groups, including key actors such as Salt Typhoon, Volt Typhoon, Flax Typhoon, Velvet Ant, and others. ... 
