@@ -7,27 +7,32 @@ permalink: /categories/
 <div class="categories-page">
   <h1>Browse by Category</h1>
 
-  <div class="category-cloud">
+  <div class="category-block-container">
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
-      <a href="#{{ category[0] | slugify }}" class="category-link">
-        {{ category[0] }} ({{ category[1] | size }})
+      <a href="#{{ category[0] | slugify }}" class="category-block">
+        <span class="category-name">{{ category[0] }}</span>
+        <span class="category-count">{{ category[1] | size }}</span>
       </a>
     {% endfor %}
   </div>
 
-  {% for category in categories %}
-    <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
-    <ul class="post-list">
-      {% for post in category[1] %}
-        <li class="post-list-item">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <div class="post-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 30 }}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
+  <div class="categories-list-container">
+    {% for category in categories %}
+      <div class="category-section">
+        <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
+        <ul class="post-list">
+          {% for post in category[1] %}
+            <li class="post-list-item">
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <div class="post-excerpt">
+                {{ post.excerpt | strip_html | truncatewords: 30 }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
 </div>
