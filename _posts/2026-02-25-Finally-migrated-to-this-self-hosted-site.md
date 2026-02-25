@@ -8,7 +8,7 @@ tags:
   - ai/coding
   - blog_post
 created: 2026-02-25
-modified: <% tp.file.last_modified_date() %>
+modified: 2026-02-25T16:42:00
 classification: public
 summary: ""
 status: active
