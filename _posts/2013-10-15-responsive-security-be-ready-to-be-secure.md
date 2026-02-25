@@ -8,7 +8,7 @@ tags: [information security, preparedness, readiness, responsive, risk managemen
 
 After much anticipation, my new book, "<em>Responsive Security - Be Ready to Be Secure</em>", is finally published today. Thanks to Prof Pauline Reich of Waseda University, and Chuan Wei Hoo, who helped to proof read the earlier drafts, my publisher, Ruijun He, my editor, Iris Fahrer, and many friends and family members for all the supports and assistance rendered throughout the long process to make this possible.
 
-<a href="/assets/images/responsivesecuritybookcover.jpg"><img id="i-308" class="size-full wp-image" src="/assets/images/responsivesecuritybookcover.jpg" alt="Image" /></a>
+<a href="{{ "/assets/images/responsivesecuritybookcover.jpg" | relative_url }}"><img id="i-308" class="size-full wp-image" src="{{ "/assets/images/responsivesecuritybookcover.jpg" | relative_url }}" alt="Image" /></a>
 
 The book is based on my thesis on a <em>Piezoelectric Approach on Information Security Risk Management</em>, which captures the past decade of my experience and learning from my practice and fellow practitioners whom I have the opportunity to work with. The book walks through our current knowledge and principles of practice in information security risk management, with discourses on the underlying issues and dilemmas in a constantly changing risk environment. It introduces the concepts of responsiveness, and highlights the importance of readiness and preparedness in face of changes that we may not always able to anticipate, and lest unable to predict. Responsive Security focuses on events that could lead to systems failures rather than the current industry's focus on the search for vulnerabilities and learning how perpetrators exploit and attack.
 
