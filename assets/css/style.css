@@ -126,11 +126,14 @@ body {
 }
 
 .sidebar-book-img {
-    max-width: 100%;
-    height: auto;
+    width: 180px;
+    height: 272px;
+    object-fit: cover;
     border: 1px solid #ddd;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s;
+    display: block;
+    margin: 0 auto;
 }
 
 .sidebar-book-img:hover {
