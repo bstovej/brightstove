@@ -1,0 +1,28 @@
+---
+layout: default
+title: Archives
+permalink: /archives/
+---
+
+<div class="archives-page">
+  <h1>Blog Archives</h1>
+
+  {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  
+  {% for year in postsByYear %}
+    <h2 id="{{ year.name }}">{{ year.name }}</h2>
+    
+    {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+    {% for month in postsByMonth %}
+      <h3 id="{{ month.name }}-{{ year.name }}">{{ month.name }}</h3>
+      <ul class="post-list">
+        {% for post in month.items %}
+          <li class="post-list-item">
+            <span class="post-meta">{{ post.date | date: "%b %-d" }}</span>
+            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endfor %}
+</div>

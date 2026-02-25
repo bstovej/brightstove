@@ -14,6 +14,8 @@
             <p class="site-description">{{ site.description }}</p>
             <nav class="site-nav">
                 <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/categories' | relative_url }}">Categories</a>
+                <a href="{{ '/archives' | relative_url }}">Archives</a>
             </nav>
         </div>
     </header>
@@ -36,21 +38,21 @@
                 </div>
 
                 <div class="widget">
-                    <h3 class="widget-title">Categories</h3>
+                    <h3 class="widget-title"><a href="{{ '/categories' | relative_url }}">Categories</a></h3>
                     <ul>
                         {% assign categories = site.categories | sort %}
                         {% for category in categories %}
-                        <li>{{ category[0] }} ({{ category[1] | size }})</li>
+                        <li><a href="{{ '/categories' | relative_url }}#{{ category[0] | slugify }}">{{ category[0] }}</a> ({{ category[1] | size }})</li>
                         {% endfor %}
                     </ul>
                 </div>
 
                 <div class="widget">
-                    <h3 class="widget-title">Archives</h3>
+                    <h3 class="widget-title"><a href="{{ '/archives' | relative_url }}">Archives</a></h3>
                     <ul>
                         {% assign postsByMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
                         {% for month in postsByMonth limit:12 %}
-                        <li>{{ month.name }} ({{ month.items | size }})</li>
+                        <li><a href="{{ '/archives' | relative_url }}#{{ month.name | slugify }}">{{ month.name }}</a> ({{ month.items | size }})</li>
                         {% endfor %}
                     </ul>
                 </div>
