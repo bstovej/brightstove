@@ -5,7 +5,8 @@ date: 2026-02-25 15:50:01
 categories:
   - AI Coding
 tags:
-  - cybersecurity
+  - ai/coding
+  - blog_post
 created: 2026-02-25
 modified: <% tp.file.last_modified_date() %>
 classification: public
