@@ -14,14 +14,46 @@
             <p class="site-description">{{ site.description }}</p>
             <nav class="site-nav">
                 <a href="{{ '/' | relative_url }}">Home</a>
-                <!-- Add other pages here -->
             </nav>
         </div>
     </header>
 
     <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
+        <div class="wrapper site-main-wrapper">
+            <div class="content-area">
+                {{ content }}
+            </div>
+            
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul>
+                        {% for post in site.posts limit:5 %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul>
+                        {% assign categories = site.categories | sort %}
+                        {% for category in categories %}
+                        <li><a href="{{ '/categories' | relative_url }}#{{ category[0] | slugify }}">{{ category[0] }}</a> ({{ category[1] | size }})</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Archives</h3>
+                    <ul>
+                        {% assign postsByMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+                        {% for month in postsByMonth limit:12 %}
+                        <li>{{ month.name }} ({{ month.items | size }})</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
         </div>
     </main>
 
