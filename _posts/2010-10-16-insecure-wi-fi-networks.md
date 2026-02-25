@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Insecure Wi-Fi networks"
+date: 2010-10-16 10:14:13
+categories: [Awareness, Computers and Internet, Risk Management]
+---
+
+Nearly five years ago, I blogged about how the laws are not going to help secure wi-fi networks, and asserted that home wi-fi networks would be the weak link if security remains as an add-on to wi-fi technology (<a href="http://wp.me/p161XL-1h" target="_blank">http://wp.me/p161XL-1h</a>). A recent report claimed that "<a title="Half of Home  Wi-Fi Networks in the UK Vulnerable" href="http://www.darknet.org.uk/2010/10/half-of-home-wi-fi-networks-in-the-uk-vulnerable-to-hackingwifi-jacking/" target="_blank">Half  of Home Wi-Fi Networks in the UK Vulnerable to Hacking/Wi-Fi Jacking</a>". Interestingly, in the past five years, the security capabilities that may be turned on for wi-fi networks have progressed beyond WEP, with an assorted list of cryptographic options, but they remain as optional. It is still common to see home users using the default name provided by the device vendor, with of course the default admin password as "admin", and no other security setup out of the box, with very few exceptions. My assertion therefore remain that if we want Wi-Fi networks to be secure, security has to be baked-in  into the technology so that if security is not there, it simply doesn't  work, but not when user tries to turn on security, it stops working. This is one of those <a title="What is Cybersecurity?" href="http://mengchow.wordpress.com/2008/05/08/what-is-cybersecurity/" target="_blank">Cybersecurity problems</a> that only the vendor (technology provider) can help to solve, but it would cost them extra manufacturing resources to do it. When they ignore it, the users are impacted, but not them.

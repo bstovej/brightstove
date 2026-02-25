@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Unusual day"
+date: 2006-11-05 17:28:16
+categories: [Travel]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!376" class="bvMsg"><div>Today (Nov 5, 2006) is one of those unusual day. Unusual not in that everything goes wrong, but everything seems to behave/response differently. Fortunately, the unusual-ness started in the evening, and seemed to have ended now.</div>
+<div> </div>
+<div>I was scheduled on a flight to Jakarta, and the plane (SQ166) was supposed to take off at 6.45pm. The flight was full. As usual, I was upgraded to business class -- this should be treated as a norm rather than an unusual event though, since I'm a Solitaire member, and usually gets upgraded when the flight is full :-) But just when the doors closed, all the lights in the aircraft cabin began to blink, then the sign of a power failure, and the emergency lights were turned on. We (the passengers) waited for a few minutes then the captain announced that there was an electrical failure (he later said there were smoke detected somewhere in the cabin.)</div>
+<div> </div>
+<div>A while later, we were asked to unboard the plane and get to the boarding area, but to leave our luggages/hand-carried items in the plane. We all obliged, and slowly, but swiftly, got out of the plane. As a precaution, I brought along my passport, but left the rest of my stuff in the plane. On hindsight, I should have brought out my entire hand-carried bag. Somehow, at that moment, the captain gave the impression that it was only a small matter. We waited for more than 20 minutes, then there were annoucement that the inspection was on, but the onward arrangement was unclear. Following which, the captain announced that we should be transferred to another plane. So everyone has to go back to the cabin, retrieve their luggages, and get to another boarding area, from gate F54 to E4, the longest distance they can find perhaps. Snacks and drinks were served at the boarding area while everyone waited to board the next plane, scheduled to take off at 9pm. I went to the business lounge for my dinner, and after all the security checks and more waiting, we were finally on board the plane. </div>
+<div> </div>
+<div>At 9.12pm, the captain announced that the flight should be ready to take off soon, and requested everyone to switch off their mobile phone, PDA, and any electrical items they may have them turned on. I switched off my mobile phone, then recalled that I haven't informed my wife about the new taking off time, and estimated arrival time. So I tried to turn it on again, and this time, for unknown reasons, the PIN that I entered were not acceptable. After three tries, the SIM card was blocked :-( This is the second unusual event in the same day, showing to me (a converted) that security can be a real pain to usability. Without the unblock code, I was simply stucked. While the plane is still stuck in the airport, I was stuck in the plane and cannot make contact with anyone outside :-( I have to continue reading &quot;The Strategist&quot;, a book about Tom Schelling, the 2005 Nobel Prize winner, which I picked up earler. The book was handy for the event though. And it gave me new ideas for the other writing that I was working on at the same time. So, not all losses, therefore no necessarily a bad day, just unusual.</div>
+<div> </div>
+<div>The plane finally took off at 9.45pm, and I finally arrived in the hotel at 11.45pm (Jakarta time). After settling in, I decided that this usual day deserved to be logged somewhere, and here it is. </div>
+<div> </div>
+<div>Lessons from today? Always expect the unexpected. As what Anthony Lim put it previously in a security career session for a group of University students, &quot;You never know.&quot; :-)</div>
+<div> </div></div>

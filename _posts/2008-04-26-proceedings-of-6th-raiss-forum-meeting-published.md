@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Proceedings of 6th RAISS Forum meeting published"
+date: 2008-04-26 03:51:50
+categories: [Security Standards]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!677" class="bvMsg"><p>This round, we did not have the proceedings printed. However, the entire volume still undergone the copy writing process, with the PDF version of the contents laid out in ready-to-print format. Here's the link to the contents: <a title="RAISS Forum Proceedings" href="http://www.itsc.org.sg/raiss.html" target="_blank" rel="tag">http://www.itsc.org.sg/raiss.html</a>. 
+<p>While we have the 6th meeting done with (I mean fully completed with the proceedings published now), it is time for planning the next meeting. One of the important change in the next meeting is that RAISS will henceforth become RAISE -- Regional Asia Information Security Exchange. The significant of this is that the group will not just focus on security standards development and related issues and best practices in the region, but also use the Forum as a platform for exchanging information relating to other security developments in the region. This effectively expands the scope of the Forum, and should make the proceedings even more interesting. As I wrote here, I understand that some security experts in the region have already marked their calendar to participate in the coming meeting, which will be from 15 to 16 July 2008, somewhere in Kuala Lumpur, Malaysia. 
+<p>Another change as we move from Standards to Exchange is the change of secretariat for the Forum. The Singapore ITSC Secretariat will relinquish the secretariat position to Malaysia's Cybersecurity Center. The team in Malaysia is not new to the Forum. They are in face one of the founding members of RAISS Forum, helped to draft the Terms of Reference (which now need to be revised accordingly), and have been a key contributors to the Forum in every meeting. 
+<p>I will provide more updates on the agenda and development relating to the new RAISE Forum as we progress. Meanwhile, if you care to comment or provide any input, you may drop a note here as well. </div>

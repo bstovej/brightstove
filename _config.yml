@@ -1,0 +1,21 @@
+title: Bright Stove
+email: mengchow@live.com
+description: >-
+  Reflecting information risk journey
+baseurl: ""
+url: "https://brightstove.net"
+twitter_username: mengchow
+github_username: bstovej
+
+# Build settings
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-feed
+
+# Layout settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

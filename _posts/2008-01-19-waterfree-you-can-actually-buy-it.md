@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Waterfree - you can actually buy it"
+date: 2008-01-19 07:26:18
+categories: [Awareness]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!633" class="bvMsg"><div>I remained curious as to why &quot;<a href="http://eussion.spaces.live.com/blog/cns!9091E2A0F1B7D523!600.entry" target="_blank">Waterfree</a>&quot; was printed on the label above the urinal in the male toilets at the Beijing International airport, and did a search (invoking <a href="http://www.live.com/" target="_blank">Windows Live </a>of course) using it as the keyword. Interestingly, a list of companies supplying the &quot;waterfree&quot; urinal products were displayed. So it is a brand name, and not a translation error. I should have done the search before I wrote that blog entry. Anyway, a few friends who read it found it interesting and didn't think that it was a brand name as well. The fact that the word does not looks like a brand logo, and is printed just below the Chinese phrase stating that flushing is not required, makes it appeared that it is a translation of the Chinese phrase. There goes the fun.</div>
+<div> </div>
+<div>At the same time, I was reading Alan Greenspan's &quot;<a href="http://www.amazon.com/Age-Turbulence-Adventures-New-World/dp/1594201315/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1200727250&amp;sr=8-1" target="_blank">The Age of Turbulence</a>&quot;, his semi-biography and insightful view and thoughts of the turbulent world from an economist's perspective, revealed that the idea of the &quot;<a href="http://eussion.spaces.live.com/blog/cns!9091E2A0F1B7D523!600.entry">Thinking Room</a>&quot; is not just a lay person's practice, but also those of great contributors like himself. In a number of instances in the book, Greenspan highlighted the importance of the bathroom as a thinking room. Here's one of those:</div>
+<blockquote style="margin-right:0;">
+<div>The concept of irrational exuberance came to me in the bathtub one morning as I was writing a speech. To this day, the bathtub is where I get many of my best ideas. My assistants have gotten used to typing from drafts scrawled on damp yellow pads--a chore that got much easier once we found a kind of pen whose ink doesn't run. Immersed in my bath, I'm as happy as Archimedes as I contemplate the world. [p. 176, &quot;<a href="http://www.amazon.com/Age-Turbulence-Adventures-New-World/dp/1594201315/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1200727250&amp;sr=8-1" target="_blank">The Age of Turbulence: Adventures in a New World</a>&quot;, Alan Greenspan]</div></blockquote>
+<div dir="ltr">A moment of solitary each day is a good thing to practice, and might just helps things to flow better.</div>
+<div dir="ltr"> </div></div>

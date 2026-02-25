@@ -1,0 +1,8 @@
+---
+layout: post
+title: "The Three Little Pigs numbered"
+date: 2007-10-03 07:06:29
+categories: [Security Standards]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!552" class="bvMsg"><p>A good news I've gotten from the SC27 Secretariat yesterday morning. In the national bodies (NB) ballot process for the three new projects in WG4, the title has already included the newly allocated number for each project. With the formal approval by JTC1 NB at the end of the ballot period last month, we now have the number allocation approved for the three projects as well. As such, we can now use these numbers to represent the respective standards that are currently being developed. However, take note that they are all in preliminary draft (towards first working draft) stage. So there's no such ISO/IEC standards in the open at the moment; they are still projects in development: <ul> <li>ISO/IEC 27031 - &quot;ICT Readiness for Business Continuity&quot; (Preliminary Draft) <li>ISO/IEC 27032 - &quot;Guidelines for Cybersecurity&quot; (Preliminary Draft) <li>ISO/IEC 27034 - &quot;Guidelines for Application Security&quot; (Preliminary Draft)</ul> <p>Note also the number 27033, although has been allocated for the revision of ISO/IEC 18028 (&quot;Network Security&quot;), it has not been formally approved at JTC1 level. This reference of the network security standard therefore still need to be quoted with an asterisk. </div>

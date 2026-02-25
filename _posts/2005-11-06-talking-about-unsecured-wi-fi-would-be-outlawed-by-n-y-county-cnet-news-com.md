@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Talking about Unsecured Wi-Fi would be outlawed by N.Y. county | CNET News.com"
+date: 2005-11-06 16:54:02
+categories: [Risk Management]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!149" class="bvMsg"><p>It is interesting to read that New York County (USA) is planning to mandate implementation of Wi-Fi security to all commercial businesses using Wi-Fi technology. From a security and law enforcement perspective, it certainly looks like a very welcomed move, since this would prevent the use of Wi-Fi network by anonymous users at least, enabling all uses to be accountable. But the problem is that this is a partial solution whereby its effectiveness is going to be questionable. As more home users get connected to broadband Internet, and have more than one PC systems at home, setting up Wi-Fi networks at home is the natural next step. By default, many Wi-Fi devices are provided without security enabled. I.e., users will install those devices without turning on security. In some cases, turning on security on those consumer-targeted Wi-Fi devices can become a challenge to the users. My experience is that many users found that when they try to configure security for their Wi-Fi networks, the network stopped working, but when security is disabled, it worked! Given such situation, many home users will have or are going to continue to have unsecured Wi-Fi networks, which are already targets of the Wardrivers. The challenge we face is that the Wi-Fi technology is designed with security as an add-on, not as an integrated requirement. As an add-on, the technology will continue to work even when the security features are disabled. If as an integrated compoment, then the usability of the technology will have a dependency on the enablement of the security feature/capability. Given such a situation, I'm not sure if such a law mandating businesses to enable security is going to help address the security issues around unauthorized use of Wi-Fi networks. What about the home users and non-commercial businesses' unprotected Wi-Fi networks?
+<p><em>Quote</em> 
+<blockquote>
+<p><a href="http://news.com.com/Unsecured+Wi-Fi+would+be+outlawed+by+N.Y.+county/2100-7351_3-5934194.html?part=rss&amp;tag=5934194&amp;subj=news">Unsecured Wi-Fi would be outlawed by N.Y. county | CNET News.com</a>
+<p> </blockquote></div>

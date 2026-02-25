@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Anti-virus company Trend Micro: Our website has been hacked, risk of Trojan horse infection"
+date: 2008-03-15 04:45:26
+categories: [Risk Management]
+---
+
+<div id="msgcns!9091E2A0F1B7D523!670" class="bvMsg"><p>At a security roundtable held earlier this week with some academics and professionals involved in information security, the subject of Vista security was discussed and debated. My assistant presented the new security capabilities incorporated in Vista, and also highlighted the incorporation of Windows Defender, and outbound firewall features to explain why Vista is more secure than the previous versions of Windows. One of the participants commented that if Vista is secure, why is there a need for Windows Defender to be incorporated? It seems that the participant could not differentiate between something that is being &quot;more secure&quot; than &quot;totally secure&quot;. Whether it is in the digital or physical world, there's no such thing as &quot;total security&quot;. If anyone believe that they can achieve total security, they will be in for big surprises and disappointment. We can however constantly strive for &quot;more secure&quot;, or better security, against what we learn and know about emerging risks. Windows Defender provides one of the many layers of defense-in-depth for such a purpose. It is also important to always note that no security feature is immune against attacks. In fact, this incident whereby an anti-virus company itself has been hacked simply provides more evidence to show the fragility of security measures that we have today, even just dealing against known risks. There are still many unknowns out there that we need to prepare and get ourselves ready for. 
+<p><a href="http://www.sophos.com/security/blog/2008/03/1186.html">Anti-virus company Trend Micro: Our website has been hacked, risk of Trojan horse infection</a></div>
