@@ -113,6 +113,38 @@ body {
     text-decoration: underline;
 }
 
+/* Responsive Images */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Table Styling */
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.post-content th, 
+.post-content td {
+    padding: 12px;
+    border: 1px solid #eee;
+    vertical-align: top;
+    text-align: left;
+}
+
+.post-content th {
+    background-color: #fcfcfc;
+    font-weight: 600;
+}
+
 /* Sidebar Widgets */
 .widget {
     margin-bottom: 40px;
