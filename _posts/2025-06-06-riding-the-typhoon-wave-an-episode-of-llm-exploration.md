@@ -2,7 +2,7 @@
 layout: post
 title: "Riding the Typhoon wave: An episode of LLM exploration"
 date: 2025-06-06 13:24:33
-categories: [Uncategorized]
+categories: [AI Risk, AI Security, AI Governance]
 tags: [AI risk, cybersecurity]
 ---
 
