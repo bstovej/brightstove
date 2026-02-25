@@ -5,14 +5,19 @@ date: 2025-06-06 13:24:33
 categories: [AI Risk, AI Security, AI Governance]
 tags: [AI risk, cybersecurity]
 ---
-<p>Was exploring a few open source LLMs installed in my laptop and observed some strange behaviors. Maybe someone here can help to explain why. More importantly, the episode reinforced the following to keep in mind when using LLM chatbots:&nbsp;</p>
-<p>1. Craft the prompt carefully upfront. Be as specific as possible. Avoid using general terms, which will get general responses.</p>
-<p>2. After getting the response, turn off the web search if what you need the LLM to do next is to work on those responses instead of finding new input.</p>
-<p>3. Start a new chat window when moving to a new context to avoid confusing the LLM.</p>
-<p>4. For better results, use specialized/fine-tuned LLM for tasks that are in a specialized domain.&nbsp;</p>
-<p>5. If you have RAG setup, use it to analyze instead of just using the web search feature, which should produce better results.</p>
-<p>The original post was published at <a href="https://substack.com/profile/324848066-meng-chow-kang/note/c-123368408?utm_source=substack&amp;utm_content=first-note-modal" target="_blank" rel="noreferrer noopener"></a>. Here's the full article:</p>
-<hr>
+
+Was exploring a few open source LLMs installed in my laptop and observed some strange behaviors. Maybe someone here can help to explain why. More importantly, the episode reinforced the following to keep in mind when using LLM chatbots:
+
+1. Craft the prompt carefully upfront. Be as specific as possible. Avoid using general terms, which will get general responses.
+2. After getting the response, turn off the web search if what you need the LLM to do next is to work on those responses instead of finding new input.
+3. Start a new chat window when moving to a new context to avoid confusing the LLM.
+4. For better results, use specialized/fine-tuned LLM for tasks that are in a specialized domain.
+5. If you have RAG setup, use it to analyze instead of just using the web search feature, which should produce better results.
+
+The original post was published at [Substack](https://substack.com/profile/324848066-meng-chow-kang/note/c-123368408). Here's the full article:
+
+---
+
 The Typhoon threat groups, which consists of several names such as Salt, Volt, and Flax Typhoon, have made wave recently in the critical infrastructure industry although there have been reports about their activities as early as in 2021 @hongsiangSingtelDetectedEradicated2024; @htelAPT41WickedPanda2025; @kimuraVoltTyphoonBRONZE2025; @yellandVoltTyphoonSalt2025;. Using [SecAI’s AI-powered threat intelligence enabled chatbot](https://i.secai.ai/), with a simple prompt, we can quickly get a comprehensive report of what the threat groups are and the commonly known techniques, tactics, and procedures (TTP) attributed to them. For example, with the prompt, "*what can you tell me about the Typhoon threat group?*" SecAI provides a curated report of everything it knows from the Internet and its cyber threat intelligence (CTI) database. A snippet of the report reads as follows:
 
 > *The Typhoon threat groups consist of multiple Advanced Persistent Threat (APT) entities generally attributed to China and linked to state-sponsored cyber espionage efforts. These groups have shown high levels of sophistication in targeting critical infrastructure, government agencies, and corporate sectors worldwide. Below is a comprehensive breakdown of the Typhoon threat groups, including key actors such as Salt Typhoon, Volt Typhoon, Flax Typhoon, Velvet Ant, and others. ... 
@@ -30,7 +35,9 @@ Deepseek-r1 however provides an entirely different response, stating that the *T
 Typhoon, in this context, is the name of a cybersecurity threat group and I've mentioned "threat group" in the prompt. I have also enabled the web search feature and Deepseek-r1 did generate search queries and reported that it has searched 46 sites. It however decides not to use the results of the web search to enhance the context, and presents its output along the line of the meteorological typhoon. Did Deepseek not fully comprehend the context of the prompt, or is it some kind of "self-protection guardrail"? I wonder.
 
 Maybe this shouldn't be a surprise. Since its launch in early 2025, there have been several reports that Deepseek exercises self-censorship @boothChineseAIChatbot2025; @roeloffsDoesDeepSeekCensor2025; @yangDeepSeekYouCan2025;.  
-![[Screenshot 2025-05-20 at 13.01.41.png | Figure 1: Sample response from three LLMs]]
+
+![Sample response from three LLMs]({{ "/assets/images/screenshot-2025-05-20.png" | relative_url }})
+*Figure 1: Sample response from three LLMs*
 
 In any case, I left it as is, locked the screen, and went for lunch. 
 
@@ -42,10 +49,10 @@ Mistral-large-2411 was however able to interpret the cybersecurity context of th
 
 Deepseek-r1 searches 10 sites and reports that it "*thought for 7 seconds*" then presents its findings of 13 "threats" with a few that overlaps with the llama3.2 list. Deepseek-r1 however presents its threat list in a slightly different format. For example, see table below. 
 
-| **Llama3.2**                                                                                                                                                                                                                                                                               | **Deepseek-r1**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Llama3.2** | **Deepseek-r1** |
+| :--- | :--- |
 | **Security and Privacy**:<br><br>- Data breaches or unauthorized access to sensitive information stored in LLMs.<br>- Potential for AI-powered phishing attacks or malware spreading through language-generated content.<br>- Risk of model manipulation or tampering by malicious actors. | **Cybersecurity Threats**<br><br>- **AI-based Threat Detection and Anomaly Detection**: LLMs can analyze vast amounts of data, including social media sentiment, network traffic, and system logs, to detect anomalies or malicious activities.<br>- **Fraud Detection**: AI-driven systems can predict fraudulent transactions by analyzing patterns in transaction histories, user behavior, and account details.<br>- **Phishing and Manipulation**: LLMs can be trained on large datasets of spammed emails, surveillance feeds, and other forms of fake communication to perform phishing attacks or manipulate information.<br>- **Data Breaches**: As AI models become more powerful, they may be used to intercept sensitive personal data, breach login credentials, or even disrupt communication. |
-| **Job Displacement and Economic Impact**:<br>	- Automation of jobs that were previously done by humans, potentially leading to unemployment.<br>	- Disruption of industries due to LLM's ability to generate high-quality content quickly and efficiently.                                 | **Job Displacement and Economic Threats**<br><br>- **AI in Manufacturing and Trade**: LLMs can optimize supply chains, reduce costs, and improve efficiency in industries like automotive, manufacturing, and agriculture.<br>- **Automation in Services**: While automation reduces labor costs, it may also lead to job losses or displacement of workers who were previously relied upon for essential functions.<br>- **Job Scams**: Misuse of AI-driven systems in recruitment or employment could result in unethical hiring practices.                                                                                                                                                                                                                                                                |
+| **Job Displacement and Economic Impact**:<br>- Automation of jobs that were previously done by humans, potentially leading to unemployment.<br>- Disruption of industries due to LLM's ability to generate high-quality content quickly and efficiently. | **Job Displacement and Economic Threats**<br><br>- **AI in Manufacturing and Trade**: LLMs can optimize supply chains, reduce costs, and improve efficiency in industries like automotive, manufacturing, and agriculture.<br>- **Automation in Services**: While automation reduces labor costs, it may also lead to job losses or displacement of workers who were previously relied upon for essential functions.<br>- **Job Scams**: Misuse of AI-driven systems in recruitment or employment could result in unethical hiring practices. |
 
 Deepseek-r1 mentions specific industry or application area, and calls out the benefits of AI in each area, e.g., threat and anomaly detection, optimize supply chains, reduce costs, etc., before highlighting the related threats. Llama3.2 simply summarizes the threats in each category.
 

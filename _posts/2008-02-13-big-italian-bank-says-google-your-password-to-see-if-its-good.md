@@ -3,8 +3,6 @@ layout: post
 title: "Big Italian bank says 'Google your password to see if it is good'"
 date: 2008-02-13 16:05:10
 categories: [Risk Management]
-id: "msgcns!9091E2A0F1B7D523!662"
-class: "bvMsg"
 ---
 <p>Don't ever try this! It is always dangerous when people get addicted to something (in this case, search engine). 
 <p><a href="http://sunbeltblog.blogspot.com/2008/01/big-italian-bank-says-google-your.html">Sunbelt Blog: Big Italian bank says &quot;Google your password to see if it's good&quot;</a> 

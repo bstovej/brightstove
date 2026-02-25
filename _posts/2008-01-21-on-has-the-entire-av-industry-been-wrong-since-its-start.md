@@ -3,8 +3,6 @@ layout: post
 title: "On whether the entire AV industry been wrong since its start"
 date: 2008-01-21 16:41:30
 categories: [Risk Management]
-id: "msgcns!9091E2A0F1B7D523!635"
-class: "bvMsg"
 ---
 <p>Have not been using Windows Live Writer for a while since trying out the beta version. On running it again today, after installing the release version, then discovered that I have the blog below drafted but not published yet. It is great that the Writer application didn't simply discard the old data associated to the beta version. So, here's the long overdue one to share. 
 <p>Sep 12, 2007. Just come across this article, which commented on Joanna Rutkowska's comments about the ineffective of AV approaches today, and that digital signature is the way to go: 
