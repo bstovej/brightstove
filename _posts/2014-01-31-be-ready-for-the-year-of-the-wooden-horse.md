@@ -8,7 +8,7 @@ tags: [cyber, readiness, responsiveness]
 
 Today marks the start of a new year on the Lunar calendar. As the Chinese saying goes, as the spring season arrives, happiness and prosperity follow. I would like to wish everyone a happy and prosperous lunar new year.
 
-<a href="http://mengchow.wordpress.com/wp-content/uploads/2014/02/wpid-sketch31523273-jpg.jpeg"><img class="alignleft" title="Sketch3152327~3.jpg" src="http://mengchow.wordpress.com/wp-content/uploads/2014/02/wpid-sketch31523273-jpg.jpeg" alt="image" width="209" height="374" /></a>
+<a href="/assets/images/wpid-sketch31523273-jpg.jpeg"><img class="alignleft" title="Sketch3152327~3.jpg" src="/assets/images/wpid-sketch31523273-jpg.jpeg" alt="image" width="209" height="374" /></a>
 
 The Year of the Horse, according to the Chinese geomancy (feugshui) system, it's a Wooden Year, which means a Wooden Horse Year. That immediately calls to our attention the well known Trojan Horse. Perhaps an important reminder of the many facets of security threats, which often leverage the surface appeal of beauty, innocence, or relevance of a subject to lure one into a hidden trap. Think Spear Phishing, Spam mails. Be prepared for the Trojan, be ready to deal with the many hidden challenges.
 
