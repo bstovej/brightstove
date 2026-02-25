@@ -28,6 +28,18 @@
             
             <aside class="sidebar">
                 <div class="widget">
+                    <h3 class="widget-title">Published Books</h3>
+                    <div class="book-widget">
+                        <a href="https://www.amazon.com/Responsive-Security-Be-Ready-Secure/dp/1466584303" target="_blank">
+                            <img src="{{ '/assets/images/responsivesecuritybookcover.jpg' | relative_url }}" alt="Responsive Security: Be Ready to Be Secure" class="sidebar-book-img">
+                        </a>
+                        <a href="https://book.douban.com/subject/30194433/" target="_blank">
+                            <img src="{{ '/assets/images/RS_CN_Cover.jpg' | relative_url }}" alt="《响应式安全：构建企业信息安全体系》" class="sidebar-book-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="widget">
                     <h3 class="widget-title">Recent Posts</h3>
                     <ul>
                         {% assign sorted_posts = site.posts | sort: "date" | reverse %}
