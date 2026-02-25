@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://brightstove.net"
 twitter_username: mengchow
 github_username: bstovej
+timezone: Asia/Singapore
 
 # Build settings
 remote_theme: pages-themes/cayman@v0.2.0
