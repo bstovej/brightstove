@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "Finally migrated to this self-hosted site"
-date: 2026-02-24 09:00:00 +0800
-categories: ["AI Coding"]
-tags: [ai/coding, blog_post]
+title: Finally migrated to this self-hosted site
+date: 2026-02-25 09:00:00 +0800
+categories:
+  - AI Coding
+tags:
+  - ai/coding
+  - blog_post
 created: 2026-02-25
 modified: 2026-02-25 16:42:00
 classification: public
-summary: "Announcement of the successful migration from WordPress to a self-hosted Jekyll site using Gemini CLI."
+summary: Announcement of the successful migration from WordPress to a self-hosted Jekyll site using Gemini CLI.
 status: active
 reviewed: false
 last_reviewed:
