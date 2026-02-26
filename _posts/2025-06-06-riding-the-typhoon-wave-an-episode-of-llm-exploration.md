@@ -34,9 +34,10 @@ Deepseek-r1 however provides an entirely different response, stating that the *T
 
 Typhoon, in this context, is the name of a cybersecurity threat group and I've mentioned "threat group" in the prompt. I have also enabled the web search feature and Deepseek-r1 did generate search queries and reported that it has searched 46 sites. It however decides not to use the results of the web search to enhance the context, and presents its output along the line of the meteorological typhoon. Did Deepseek not fully comprehend the context of the prompt, or is it some kind of "self-protection guardrail"? I wonder.
 
-Maybe this shouldn't be a surprise. Since its launch in early 2025, there have been several reports that Deepseek exercises self-censorship @boothChineseAIChatbot2025; @roeloffsDoesDeepSeekCensor2025; @yangDeepSeekYouCan2025;.  
+Maybe this shouldn't be a surprise. Since its launch in early 2025, there have been several reports that Deepseek exercises self-censorship @boothChineseAIChatbot2025; @roeloffsDoesDeepSeekCensor2025; @yangDeepSeekYouCan2025;.
 
-![Sample response from three LLMs]({{ "/assets/images/screenshot-2025-05-20.png" | relative_url }})
+
+![Sample response from three LLMs]({{"/assets/images/screenshot-2025-05-20.png"| relative_url }})
 *Figure 1: Sample response from three LLMs*
 
 In any case, I left it as is, locked the screen, and went for lunch. 

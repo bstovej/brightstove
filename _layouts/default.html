@@ -29,6 +29,14 @@
             
             <aside class="sidebar">
                 <div class="widget">
+                    <h3 class="widget-title">Search</h3>
+                    <div id="search-container">
+                        <input type="text" id="search-input" placeholder="Search posts...">
+                        <ul id="results-container"></ul>
+                    </div>
+                </div>
+
+                <div class="widget">
                     <p><b><a href="{{ '/about' | relative_url }}">About Bright Stove</a></b></p>
                 </div>
 
@@ -178,5 +186,19 @@
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
         </div>
     </footer>
+
+    <!-- Search Script -->
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+    <script>
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: "{{ '/search.json' | relative_url }}",
+            searchResultTemplate: '<li><a href="{url}">{title}</a><br><small>{date}</small></li>',
+            noResultsText: '<li>No results found</li>',
+            limit: 10,
+            fuzzy: false
+        });
+    </script>
 </body>
 </html>
