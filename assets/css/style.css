@@ -463,3 +463,22 @@ body {
     display: block;
     margin-top: 2px;
 }
+
+/* Archives Widget Styling */
+.archives-widget {
+    margin-top: 10px;
+}
+
+.widget-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #888;
+    margin: 15px 0 10px 0;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 3px;
+}
+
+.archives-widget ul {
+    margin-bottom: 20px;
+}
