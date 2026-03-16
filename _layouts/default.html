@@ -174,7 +174,8 @@
                 <div class="widget">
                     <h3 class="widget-title"><a href="{{ '/archives' | relative_url }}">Archives</a></h3>
                     <ul>
-                        {% assign postsByMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+                        {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+                        {% assign postsByMonth = sorted_posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
                         {% for month in postsByMonth limit:12 %}
                         <li><a href="{{ '/archives' | relative_url }}#{{ month.name | slugify }}">{{ month.name }}</a> ({{ month.items | size }})</li>
                         {% endfor %}

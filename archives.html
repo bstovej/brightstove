@@ -9,7 +9,8 @@ permalink: /archives/
   <div id="filter-info" style="display: none; margin-bottom: 20px; font-weight: bold; color: #0073aa; border-bottom: 1px solid #eee; padding-bottom: 10px;"></div>
 
   <div class="archives-list-container">
-    {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+    {% assign postsByYear = sorted_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
     
     {% for year in postsByYear %}
       <div class="year-group" data-year="{{ year.name }}">
@@ -17,8 +18,9 @@ permalink: /archives/
         
         {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
         {% for month in postsByMonth %}
-          <div class="month-group" data-month="{{ month.name }}-{{ year.name }}">
-            <h3 id="{{ month.name }}-{{ year.name }}">{{ month.name }}</h3>
+          {% assign month_id = month.name | append: ' ' | append: year.name | slugify %}
+          <div class="month-group" data-month="{{ month_id }}">
+            <h3 id="{{ month_id }}">{{ month.name }}</h3>
             <ul class="post-list">
               {% for post in month.items %}
                 <li class="post-list-item">
@@ -58,7 +60,7 @@ function applyFilter() {
 
   if (hash.match(/^[0-9]{4}$/)) {
     // Year filter (e.g. #2025)
-    filterHeader = `Archives for ${hash}`;
+    filterHeader = 'Archives for ' + hash;
     yearGroups.forEach(g => {
       if (g.getAttribute('data-year') === hash) {
         g.style.display = 'block';
@@ -68,21 +70,30 @@ function applyFilter() {
       }
     });
   } else if (hash.includes('-')) {
-    // Month filter (e.g. #January-2025)
-    const [month, year] = hash.split('-');
-    filterHeader = `Archives for ${month} ${year}`;
+    // Month filter (e.g. #march-2026)
+    const parts = hash.split('-');
+    const year = parts[parts.length - 1];
+    const monthSlug = parts.slice(0, -1).join(' ');
+    
+    // Capitalize first letter of month for display
+    const monthDisplay = monthSlug.charAt(0).toUpperCase() + monthSlug.slice(1);
+    filterHeader = 'Archives for ' + monthDisplay + ' ' + year;
+    
     yearGroups.forEach(g => {
       if (g.getAttribute('data-year') === year) {
         g.style.display = 'block';
         const months = g.querySelectorAll('.month-group');
+        let monthFound = false;
         months.forEach(m => {
-          if (m.getAttribute('data-month') === hash) {
+          if (m.getAttribute('data-month').toLowerCase() === hash.toLowerCase()) {
             m.style.display = 'block';
             totalPosts = m.querySelectorAll('.post-list-item').length;
+            monthFound = true;
           } else {
             m.style.display = 'none';
           }
         });
+        if (!monthFound) g.style.display = 'none';
       } else {
         g.style.display = 'none';
       }
@@ -91,7 +102,7 @@ function applyFilter() {
 
   if (totalPosts > 0) {
     titleEl.innerText = filterHeader;
-    filterInfoEl.innerText = `Total Posts: ${totalPosts}`;
+    filterInfoEl.innerText = 'Total Posts: ' + totalPosts;
     filterInfoEl.style.display = 'block';
     // Scroll to top of content area
     window.scrollTo({ top: titleEl.offsetTop - 20, behavior: 'smooth' });
