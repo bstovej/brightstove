@@ -12,7 +12,7 @@ modified: 2026-02-25 16:42:00
 classification: public
 summary: Announcement of the successful migration from WordPress to a self-hosted Jekyll site using Gemini CLI.
 status: active
-reviewed: false
+reviewed: true
 last_reviewed:
 related: []
 ---
